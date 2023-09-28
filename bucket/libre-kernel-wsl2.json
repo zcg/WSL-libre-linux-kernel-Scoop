@@ -29,7 +29,6 @@
         "\"@ -passthru -name CustomWSL2ProfileUninstall -UsingNamespace System.Text",
         "$null = $ini::WritePrivateProfileString(\"wsl2\", \"kernel\", $null, \"$env:USERPROFILE\\.wslconfig\")"
     ],
-    "version": "6.5.0-gnu-gcfc030842516",
-    "url": "https://github.com/zhenruyan/WSL-libre-linux-kernel/releases/download/bin%2F6.5.0-gnu-gcfc030842516/vmlinuxv6.zip",
-    "hash": "fe18bfd19f94ca29e51e3985246750beb72db9508ccb87bb97f1d0e5d05f3481"
+    "version": "6.5.5",
+    "url": "https://github.com/zhenruyan/WSL-libre-linux-kernel/releases/download/bin%2F6.5.5/vmlinuxv6.5.5-gnu.zip"
 }
