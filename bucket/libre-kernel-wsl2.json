@@ -14,7 +14,7 @@
         "[DllImport(\"Kernel32\")]",
         "public static extern int GetPrivateProfileString (string section, string key, string def, StringBuilder retVal, int size, string filePath);",
         "\"@ -passthru -name CustomWSL2ProfileInstall -UsingNamespace System.Text",
-        "$kernel_path=\"$dir\\vmlinuxv6.5-gnu\" -replace \"\\\\\", \"\\\\\" # double all back-slashess",
+        "$kernel_path=\"$dir\\vmlinuxv6.5.5-gnu\" -replace \"\\\\\", \"\\\\\" # double all back-slashess",
         "$null = $ini::WritePrivateProfileString(\"wsl2\", \"kernel\", $kernel_path, \"$env:USERPROFILE\\.wslconfig\")"
     ],
     "post_uninstall": [
